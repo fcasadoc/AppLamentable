@@ -13,7 +13,6 @@ log.txt
 npm-debug.log*
 
 .idea/
-.ionic/
 .sourcemaps/
 .sass-cache/
 .tmp/
@@ -23,13 +22,31 @@ dist/
 node_modules/
 tmp/
 temp/
+hooks/
 platforms/
 plugins/
 plugins/android.json
 plugins/ios.json
 www/
+documentation/
+.gitkeep
+index.html
+manifest.json
+service-worker.js
 $RECYCLE.BIN/
+.vs/
+config.xml
 
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
+logFile.txt
+**/src/**/*.js
+**/src/**/*.map
+src/assets/config/*
+junitresults.xml
+src/tests/e2e/chrome-test-report.html
+First Run
+Local State
+Default
+package-lock.json

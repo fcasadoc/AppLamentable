@@ -1,14 +1,26 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>
-      Ionic Blank
+      Bienvenido a la Aplicación Lamentable
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ul class="flex-container">
+    <li class="flex-item active" (click)="onClickInstallationWithProspect()" id="buttonIWP">
+      <ion-icon name="person" item-start class="icon-input"></ion-icon>
+      <span>Directorio Lamentable</span>
+    </li>
+    <li class="flex-item active" (click)="onClickInstallation()" id="buttonI">
+      <ion-icon name="build" item-start class="icon-input"></ion-icon>
+      <span>Enlaces Lamentables</span>
+    </li>
+
+    <li class="flex-item active" (click)="onClickInhibitionDetectorManagement()">
+      <ion-icon name="search" item-start class="icon-input"></ion-icon>
+      <span>Biblioteca Lamentable</span>
+    </li>
+
+  </ul>
 </ion-content>

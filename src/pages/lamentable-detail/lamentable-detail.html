@@ -1,0 +1,54 @@
+<!--
+  Generated template for the LamentableDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Información del Lamentable</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<!--BASIC PROFILE-->
+<ion-list>
+  <ion-item>
+  <ion-avatar item-start>
+          <img src={{navParams.data.profile}}>
+  </ion-avatar>
+    <ion-col col-12>
+      <span class="title">
+        <strong>{{navParams.data.usuario}} Lopez Arellano</strong>
+      </span>
+    </ion-col>
+  </ion-item>
+</ion-list>
+
+<ion-list>
+
+        <ion-item (click)="callPhone(navParams.data.phone)">
+            Llamar Lamentable
+          <ion-icon name="call" item-right></ion-icon>
+        </ion-item>
+
+        <ion-item>
+              Navegar A Lamentable
+            <ion-icon name="navigate" (click)="navigateLocation(navParams.data.direccion)" item-right></ion-icon>
+        </ion-item>
+
+          <ion-item  (click)="copiarIban(navParams.data.iban)">
+                Copiar Iban
+              <ion-icon name="copy" item-right></ion-icon>
+          </ion-item>
+
+          <ion-item (click)="enviarEmail(navParams.data.email)">
+                  Enviar Mail
+          <ion-icon name="mail" item-right></ion-icon>
+          </ion-item>
+  </ion-list>
+</ion-content>
